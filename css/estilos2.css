@@ -23,5 +23,38 @@ h5 {
 }
 
 /*4. Por identificador*/
-#id_boton {
+#id_boton1 {
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+  padding-right: 30px;
+  border: solid red 5px;
+}
+
+/*5. Por Atributo, combinado: boton[id]*/
+[id] {
+  font-size: 50px;
+  border: solid yellow 10px;
+  border-radius: 20px;
+}
+
+img[alt="texto1"] {
+  width: 40px;
+  height: 50px;
+}
+
+img[src*=".png"] {
+  width: 40px;
+  height: 50px;
+}
+
+/*6. PseudoClase (eventos)*/
+i:hover {
+  color: darkblue;
+  font-size: 70px;
+}
+
+input:focus {
+  border-color: blueviolet;
+  background-color: red;
 }
