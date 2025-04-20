@@ -1,0 +1,27 @@
+/*1. Universal*/
+
+* {
+  color: blue;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/*2. Por tipo de elemento HTML */
+h4 {
+  background-color: red;
+  font-size: 40px;
+}
+h5 {
+  background-color: green;
+  font-size: 10px;
+}
+
+/*3. Por clase*/
+.grupo1 {
+  background-color: yellow;
+  border: solid black 3px;
+}
+
+/*4. Por identificador*/
+#id_boton {
+}
