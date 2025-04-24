@@ -1,0 +1,52 @@
+<!DOCTYPE html> <!--HTML5 -->
+<html lang="en">
+    
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title> 
+    <script>
+        function cambiarColor(elemento,color){
+            document.getElementById(elemento).style.color=color;
+        }
+
+        function agregarBoton(){
+            document.getElementById('id_espacio').innerHTML='<button>agregarBoton</button>';
+        }
+
+        function eliminar(idElemento){
+            document.getElementById('idElemento').remove();
+        }
+    </script>
+</head> 
+
+<body> 
+    <header>
+        <h1>Calculadora UCE</h1>
+    </header>
+    <nav></nav>
+    <section>
+        <div id="id_espacio"></div>
+       <label id="id_label_1" for="id_numero_1">Numero1</label>
+       <input id="id_numero_1" type="number">
+       <br>
+       <label id="id_label_2" for="id_numero_2">Numero</label>
+       <input id="id_numero_2" type="number">
+       <br>
+       <br>
+        <button onclick="cambiarColor('id_label_1','blue')">Cambiar color 1</button>
+        <button onclick="cambiarColor('id_label_2','yellow')">Cambiar color 2</button>
+        <button onclick="agregarBoton()">Agregar elemento</button>
+        <button id = "id_error">Error</button>
+        <button onclick="eliminar('id_error')">Eliminar</button>
+    </section>
+
+    <aside></aside>
+
+    <footer>
+      
+    </footer>
+</body>
+
+</html>
+
