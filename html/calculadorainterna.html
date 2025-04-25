@@ -15,7 +15,7 @@
         }
 
         function eliminar(idElemento){
-            document.getElementById('idElemento').remove();
+            document.getElementById(idElemento).remove();  
         }
     </script>
 </head> 
@@ -37,7 +37,7 @@
         <button onclick="cambiarColor('id_label_1','blue')">Cambiar color 1</button>
         <button onclick="cambiarColor('id_label_2','yellow')">Cambiar color 2</button>
         <button onclick="agregarBoton()">Agregar elemento</button>
-        <button id = "id_error">Error</button>
+        <button id="id_error">Error</button>
         <button onclick="eliminar('id_error')">Eliminar</button>
     </section>
 

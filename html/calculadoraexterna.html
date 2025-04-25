@@ -15,21 +15,22 @@
     </header>
     <nav></nav>
     <section>
-       <label id="id_label_1" for="id_numero_1">Numero1</label>
+       <label id="id_label_1" for="id_numero_1">Numero1 </label>
        <input id="id_numero_1" type="number">
        <br>
-       <label id="id_label_2" for="id_numero_2">Numero</label>
+       <label id="id_label_2" for="id_numero_2">Numero2 </label>
        <input id="id_numero_2" type="number">
        <br>
        <br>
-        <button onclick="document.getElementById('id_numero_1').style.background='blue'">Cambiar color</button>
-        <button onclick="document.getElementById('id_label_2').innerText='Numero2'">Cambiar texto</button>
-        <button onclick="document.getElementById('id_label_1').style.fontSize='40px'">Cambiar tamaño</button>
-        <button
-            onclick="document.getElementById('id_concatenar').innerText = document.getElementById('id_label_1').innerText + document.getElementById('id_label_2').innerText">Concatenar</button>
-        <label id="id_concatenar"></label>
- 
-        <label id = "id_concatenar" ></label>
+       <p id='id_resultado'>Resultado: </p>
+        <button onclick="evaluarOperacion('+')">Sumar</button>
+        <button onclick="evaluarOperacion('-')">Restar</button>
+        <button onclick="evaluarOperacion('*')">Multiplicar</button>
+        <button onclick="evaluarOperacion('/')">Dividir</button>
+
+        <button onclick="fundamentos()">Fundamentos de Js</button>
+
+      
     </section>
 
     <aside></aside>
