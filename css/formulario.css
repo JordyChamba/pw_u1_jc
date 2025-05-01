@@ -1,0 +1,64 @@
+.constainer {
+    display: flex;
+    justify-content: center ;
+    align-items: center ;
+}
+
+body {
+    background-color: rgb(60, 223, 235);   
+}
+
+/*Vamos activar, nombre, apellido, fecha de nacimeito, etc*/
+p:before {
+    content: attr(type);
+    display: block;
+    margin: 4px;
+    font-size: 18px;
+    color: #796262;
+}
+
+input {
+    width: 270px;
+    border: none;
+    border-bottom: 2px solid #6c6c85;
+    background: none;
+}
+
+/*PseduClase*/
+input:focus {
+    outline: none; /*Quitamos la enmarcacion*/
+    border-bottom: 3px solid #6d6dca;
+} 
+
+h2, header {
+    margin: 10px 2px;
+    width: 115px;
+    color: #4b4b57;
+    border-bottom: 3px solid #075b93;
+}
+
+header {
+    font-size: 35px;
+    width: 240px;
+}
+
+.formulario {
+    border-radius: 10px;
+    background: #dfd4d4;
+    padding: 30px 25px;
+    box-shadow: 10px 10px #397196;
+}
+
+button {
+    background: #cfc8c8;
+    padding: 5px ;
+    font-size: 15px;
+    color: #524c4c;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.centra-boton {
+    display: flex;
+    justify-content: center;
+}
