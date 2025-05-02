@@ -1,0 +1,53 @@
+.container {
+    display: flex;
+    justify-content: center; /*No son fijos*/
+    align-items: center; /*No son fijos*/
+}
+
+.calculadora {
+    display: grid;
+    grid-template-columns: 75px 75px 75px 75px; /*Son 4 columnas*/
+    grid-template-rows: 75px 75px 75px 75px 75px 75px; /*tamaño y cantidad de filas*/
+    padding: 20px;
+    /*border: 1px solid black;*/ /*para que se vea el borde*/
+    border-radius: 15px;
+    background: rgb(230, 163, 230); /*Tiene que ser mas clara*/
+    box-shadow: 15px 15px rgb(221, 20, 221);/*la sombra mas oscura*/
+    border: solid rgb(78, 72, 72);
+}
+
+body {
+    background: rgb(231, 77, 231); /*Tiene que ser mas densa*/
+}
+
+.display-calculadora {
+    grid-column: span 4; /*Ocupa 4 espacio de la  cuadricula*/
+    text-align: right;
+    padding: 10px;
+    border: 1px solid rgb(78, 72, 72);
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 5px;
+    margin-bottom: 10px; /*separa las letras de mi display 5+5*/
+}
+
+button {
+    cursor: pointer; /*el efecto del dedo en los botones*/
+    margin: 3px; /*separar los botones*/
+    border-radius: 20px; /*redondear los botones*/
+    font-size: 20px;
+    border: none;
+    background: rgb(221, 216, 221);
+    font-family: digital-7;
+    color: black;
+}
+
+/*quiero que ocupe dos columbas*/
+.columna-2 {
+    grid-column: span 2;
+}
+
+/*que el color al aplastar el boton cambie*/
+button:active {
+    background: red ;
+}

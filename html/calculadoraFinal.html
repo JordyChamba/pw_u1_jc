@@ -1,0 +1,44 @@
+<!DOCTYPE html> <!--HTML5 -->
+<html lang="en">
+    
+<head> 
+    <meta charset="UTF-8"> 
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   <link rel="stylesheet" href="../css/calculadoraFinal.css">
+   <script src="../js/calculadoraFinal.js"></script>
+    <title>Mi primera página Web</title> 
+</head> 
+
+<body> 
+    <div class="container">
+        <header>Calculadora</header>
+        <nav></nav>
+        <section>
+            <div class="calculadora">
+                <div id="id_display" class="display-calculadora"></div>
+                <button style="background: rgb(247, 124, 102);"> C</button>
+                <button>&larr;</button> 
+                <button>%</button>
+                <button onclick="mostrarEnDisplay('/')">/</button>
+                <button onclick="mostrarEnDisplay(7)">7</button>
+                <button onclick="mostrarEnDisplay(8)">8</button>
+                <button onclick="mostrarEnDisplay(9)">9</button>
+                <button onclick="mostrarEnDisplay('*')">*</button>
+                <button onclick="mostrarEnDisplay(4)">4</button>
+                <button onclick="mostrarEnDisplay(5)">5</button>
+                <button onclick="mostrarEnDisplay(6)">6</button>
+                <button onclick="mostrarEnDisplay('-')">-</button>
+                <button onclick="mostrarEnDisplay(1)">1</button>
+                <button onclick="mostrarEnDisplay(2)">2</button>
+                <button onclick="mostrarEnDisplay(3)">3</button>
+                <button onclick="mostrarEnDisplay('+')">+</button>
+                <button onclick="mostrarEnDisplay(0)">0</button>
+                <button>.</button>
+                <button class="columna-2" onclick="calcularResultado()">=</button>
+            </div>
+        <footer></footer>
+    </div>
+</body>
+
+</html>
